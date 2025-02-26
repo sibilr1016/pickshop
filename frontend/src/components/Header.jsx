@@ -5,7 +5,7 @@ import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useLogoutMutation } from "../slices/usersApiSlice";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import { logout } from "../slices/authSlice";
 import SearchBox from "./SearchBox";
 import { resetCart } from "../slices/cartSlice";
@@ -32,11 +32,12 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           {/* <LinkContainer to="/"> */}
           <Navbar.Brand href="/">
-            <img src={logo} alt="logo" /> PickShop
+            {/* <img src={logo} alt="logo" />  */}
+            PickShop
           </Navbar.Brand>
           {/* </LinkContainer> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
